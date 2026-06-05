@@ -13,7 +13,7 @@ public class MedioPagoMockAPI {
 
     @POST
     public Response autorizarPago(String jsonRequest) {
-        int probabilidad = random.nextInt(3);
+        int probabilidad = random.nextInt(4);
 
         if (probabilidad < 2) {
             String codigoAutorizacion = UUID.randomUUID().toString();
