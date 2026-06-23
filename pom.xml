@@ -72,7 +72,15 @@
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <version>5.0.1.Final</version>
                 <configuration>
-                    <jboss-home>C:\Herramientas\wildfly-39.0.1.Final</jboss-home>
+                    <discover-provisioning-info>
+                        <version>34.0.0.Final</version>
+                    </discover-provisioning-info>
+
+                    <server-args>
+                        <server-arg>-Djboss.socket.binding.port-offset=1</server-arg>
+                    </server-args>
+
+                    <port>9991</port>
                 </configuration>
             </plugin>
         </plugins>
